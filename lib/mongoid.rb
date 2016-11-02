@@ -36,6 +36,9 @@ require "active_model"
 require "origin"
 require "moped"
 
+# For compatibility
+Moped::BSON = ::BSON
+
 require "mongoid/atomic/positionable"
 require "mongoid/evolvable"
 require "mongoid/extensions"
